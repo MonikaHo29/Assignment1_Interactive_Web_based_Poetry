@@ -7,7 +7,6 @@ body {
     font-size: 2em;
     overflow-x: hidden;
     width: 100%;
-    position: relative;
 }
 section {
     display: flex;
@@ -17,19 +16,48 @@ section {
     position: relative;
     height: 1080px;
 }
+
+
+.keyword_size1{
+    color: #D1B49B;
+    font-size: 9em;
+    font-weight: bold;
+    opacity: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.keyword_size2{
+    color: #D1B49B;
+    font-size: 4.5em;
+    font-weight: bold;
+    opacity: 50%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    transform: translate(-50%, -50%);
+}
+.keyword_size3{
+    color: #D1B49B;
+    font-size: 2.5em;
+    font-weight: bold;
+    opacity: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.stanza{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/*------------------------------------section 1-----------------------------------------*/    
 .section1{
     flex-direction: column;
+    text-align: center;
 }
 .section1 img {
     width: 35%;
-}
-h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: center;
 }
 #sun_distorted {
     top: 20%;
@@ -37,84 +65,69 @@ h1 {
     transform: translate(0%, -80%);
     z-index: -1;
 }
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+}
 #introduction {
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
 }
+
+/*------------------------------------section 2-----------------------------------------*/     
 #stanza1 {
-    position: absolute;
-    top: -16vw; /* 20% von #sun_distorted plus 6em Schriftgröße und 40px Abstand */
+    top: -16vw;
     left: 50%;
     transform: translateX(-50%); 
     text-align: center;
 }
 #keyword1 {
-    position: absolute;
     top: 5%;
     left: 1%;
-    transform: translateY(-50%);
-    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: left; /* Text linksbündig ausrichten */
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: blue;
+    text-align: left;
     z-index: 1;
 }
 #keyword2 {
-    position: absolute;
     top: 15%;
     right: 1%;
-    transform: translateY(-50%);
-    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: right; /* Text linksbündig ausrichten */
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: blue;
+    text-align: right; 
 }
 #sun_glowing_s2 {
     position: absolute;
-    top: 60%;
-    left: -8%;
+    top: 20%;
+    left: 51%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Passen Sie die Breite nach Bedarf an */
+    width: 35%; 
     z-index: -2;
 }
 #gate {
     position: absolute;
-    top: 35%;
-    left: -8%;
+    top: 10%;
+    left: 51%;
     transform: translate(-50%, -50%);
-    width: 20%; /* Passen Sie die Breite nach Bedarf an */
+    width: 10%; 
 }
 #mountain {
     position: absolute;
-    top: 68%;
-    left: -5vw;
+    top: 26.5%;
+    left: 49vw;
     transform: translate(-50%, -50%);
-    width: 99vw; /* Passen Sie die Breite nach Bedarf an */
+    width: 99vw;
     z-index: -1;
+
+/*------------------------------------section 3-----------------------------------------*/    
 }#keyword3 {
-    position: absolute;
     top: -33%;
     left: 25%;
-    font-size: 2.5em;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    color: blue;
 }
 #keyword4 {
-    position: absolute;
     top: -6%;
     left: 8%;
-    font-size: 4.5em;
-    transform: translate(-50%, -50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-weight: bold;
-    color: blue;
 }
 #umbrella1{
     position: absolute;
@@ -153,28 +166,25 @@ h1 {
     width: 35%;
 }
 #stanza2{
-    position: absolute;
     top: 16%;
     left: 76%;
-    transform: translate(-50%, -50%);
     width: 35%;
     text-align: right;
     width: 40%;
 }
+
+/*------------------------------------section 4-----------------------------------------*/    
 #keyword5{
-    position: absolute;
     top: -35%;
     left: 32%;
-    font-size: 8.5em;
     text-wrap: nowrap;
+    writing-mode: horizontal-tb;
+    text-orientation:unset;
     transform: translate(-50%, -50%);
-    color: blue;
 }
 #stanza3_1{
-    position: absolute;
     top: -8%;
     left: 23%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 #eye_open{
@@ -192,118 +202,95 @@ h1 {
     width: 10vw;
 }
 #stanza3_2{
-    position: absolute;
     top: -20%;
     left: 78%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 #keyword6{
-    position: absolute;
     top: 10%;
     left: 82%;
-    font-size: 4.5em;
-    font-weight: bold;
+    writing-mode: horizontal-tb;
+    text-orientation:unset;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
-    color: blue;
 }
+
+/*------------------------------------section 5-----------------------------------------*/    
 #keyword7{
-    position: absolute;
     top: -44%;
-    left: 15%;
-    font-size: 2.5em;
-    font-weight: bold;
+    left: 20%;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
-    color: blue;
+    writing-mode: horizontal-tb;
+    text-orientation:unset;
+    opacity: 80%;
 }
 #keyword8{
-    position: absolute;
-    top: -20%;
+    top: -5%;
     left: 7%;
-    font-size: 2.5em;
     font-weight: normal;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: blue;
 }
 #keyword9{
-    position: absolute;
-    top: -55%;
-    left: 23%;
-    font-size: 2.5em;
+    top: -65%;
+    left: 34%;
     font-weight: normal;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: blue;
 }
 #keyword10{
-    position: absolute;
-    top: -25%;
-    left: 23%;
-    font-size: 2.5em;
+    top: -10%;
+    left: 34%;
     font-weight: normal;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: blue;
 }
 #koifish3{
     position: absolute;
     top: -50%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 16vw;
 }
 #koifish2{
     position: absolute;
     top: -30%;
-    left: 60%;
+    left: 62%;
     transform: translate(-50%, -50%);
     width: 13vw;
 }
 #koifish1{
     position: absolute;
     top: -15%;
-    left: 45%;
+    left: 47%;
     transform: translate(-50%, -50%);
     width: 13vw;
 }
 #stanza4{
-    position: absolute;
-    top: -60%;
+    top: -70%;
     left: 76%;
-    transform: translate(-50%, -50%);
     width: 35%;
     text-align: right;
     width: 40%;
 }
 #keyword11{
-    position: absolute;
-    top: -35%;
+    top: -51%;
     left: 85%;
-    font-size: 2.5em;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-    color: blue;
+    writing-mode: horizontal-tb;
+    text-orientation:unset;
+    text-wrap: nowrap;
 }
 #keyword12{
-    position: absolute;
-    top: -20%;
-    left: 88%;
-    font-size: 2.5em;
+    top: -25%;
+    left: 90%;
     font-weight: normal;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: blue;
 }
+
+/*------------------------------------section 6-----------------------------------------*/    
 #mountain_face{
     position: absolute;
     top: -25%;
@@ -327,99 +314,59 @@ h1 {
     z-index: -1;
 }
 #stanza5_1{
-    position: absolute;
     top: -45%;
     left: 65%;
     text-align: right;
     text-wrap: nowrap;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    transform: translate(-50%, -50%);
 }
 #keyword13{
-    position: absolute;
     top: -40%;
     left: 77%;
-    font-size: 2.5em;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    opacity: 30%;
-    color: blue;
 }
 #keyword14{
-    position: absolute;
     top: -50%;
     left: 82%;
-    font-size: 2.5em;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
     opacity: 30%;
-    color: blue;
 }
 #keyword15{
-    position: absolute;
     top: -40%;
     left: 95%;
-    font-size: 4.5em;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    opacity: 50%;
-    color: blue;
+    opacity: 30%;
 }
 #keyword16{
-    position: absolute;
     top: -40%;
     left: 92%;
-    font-size: 4.5em;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
     opacity: 80%;
-    color: blue;
 }
+
+
+/*------------------------------------section 7-----------------------------------------*/    
 #stanza6_1{
-    position: absolute;
     top: -58%;
     left: 12%;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
     text-align: left;
 }
 #keyword17 {
-    position: absolute;
     top: -58%;
-    left: 20%;
-    transform: translateY(-50%);
-    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: center; /* Text linksbündig ausrichten */
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: blue;
+    left: 18%;
+    text-align: center;
 }
 #keyword18 {
-    position: absolute;
     top: -58%;
-    left: 55%;
-    transform: translateY(-50%);
-    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: center; /* Text linksbündig ausrichten */
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color: blue;
+    left: 58%;
+    text-align: center;
 }
 #stanza6_2{
-    position: absolute;
     top: -58%;
     left: 88%;
     text-wrap: nowrap;
-    transform: translate(-50%, -50%);
     text-align: right; 
 }
 #earth_red{
@@ -429,31 +376,40 @@ h1 {
     transform: translate(-50%, -50%);
     width: 35%;
 }
+
+
+/*------------------------------------section 8-----------------------------------------*/    
 #stanza7{
-    position: absolute;
-    top: -90%;
+    top: 3%;
     left: 5%;
     transform: translateY(-50%);
-    text-align: left; /* Text linksbündig ausrichten */
+    text-align: left; 
 }
 #IKIGAI_sign{
     position: absolute;
-    top: -65%;
+    top: 30%;
     left: 90%;
     transform: translate(-50%, -50%);
     width: 55%;
 }
 #keyword19 {
-    position: absolute;
-    top: -38%;
+    top: 53%;
     left: 10%;
+    text-wrap: nowrap;
+    writing-mode: horizontal-tb;
+    text-orientation:unset;
+    text-align: right;
+    z-index: -1;
+}
+#motivation {
+    position: absolute;
+    top: 85%;
+    left: 35%;
     transform: translateY(-50%);
     text-wrap: nowrap;
-    font-weight: bold;
-    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
-    text-align: right; /* Text linksbündig ausrichten */
-    color: blue;
-    z-index: -1;
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center; 
 }
 
 
