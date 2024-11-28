@@ -1,0 +1,172 @@
+body {
+    background-image: url('SVG/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 2em;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 1080px;
+}
+.section1{
+    flex-direction: column;
+}
+.section1 img {
+    width: 35%;
+}
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: center;
+}
+#sun_distorted {
+    top: 20%;
+    left: 50%;
+    transform: translate(0%, -80%);
+    z-index: -1;
+}
+#introduction {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#stanza1 {
+    position: absolute;
+    top: -10vw; /* 20% von #sun_distorted plus 6em Schriftgröße und 40px Abstand */
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+#keyword1 {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    transform: translateY(-50%);
+    font-size: 10em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: left; /* Text linksbündig ausrichten */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+    z-index: 1;
+}
+#keyword2 {
+    position: absolute;
+    top: 35%;
+    right: 1%;
+    transform: translateY(-50%);
+    font-size: 10em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: right; /* Text linksbündig ausrichten */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#sun_glowing_s2 {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Passen Sie die Breite nach Bedarf an */
+    z-index: -2;
+}
+#gate {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    width: 20%; /* Passen Sie die Breite nach Bedarf an */
+}
+#mountain {
+    position: absolute;
+    top: 75%;
+    left: -0.5%;
+    transform: translate(-50%, -50%);
+    width: 205%; /* Passen Sie die Breite nach Bedarf an */
+    z-index: -1;
+}
+#mountain {
+    position: absolute;
+    top: 75%;
+    left: -0.5%;
+    transform: translate(-50%, -50%);
+    width: 205%; /* Passen Sie die Breite nach Bedarf an */
+    z-index: -1;
+}#keyword3 {
+    position: absolute;
+    top: -5%;
+    left: 25%;
+    font-size: 2.5em;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+#keyword4 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#umbrella1{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 17%;
+}
+#umbrella2{
+    position: absolute;
+    top: 23%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 17%;
+}
+#umbrella3{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 17%;
+}
+#spark1{
+    position: absolute;
+    top: 12%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+#spark2{
+    position: absolute;
+    top: -8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+    width: 35%;
+}
+#stanza2{
+    position: absolute;
+    top: 40%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    text-align: right;
+    width: 40%;
+}
+
+
+
