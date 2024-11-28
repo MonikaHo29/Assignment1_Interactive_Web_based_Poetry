@@ -46,17 +46,17 @@ h1 {
 }
 #stanza1 {
     position: absolute;
-    top: -10vw; /* 20% von #sun_distorted plus 6em Schriftgröße und 40px Abstand */
+    top: -16vw; /* 20% von #sun_distorted plus 6em Schriftgröße und 40px Abstand */
     left: 50%;
     transform: translateX(-50%); 
     text-align: center;
 }
 #keyword1 {
     position: absolute;
-    top: 30%;
+    top: 5%;
     left: 1%;
     transform: translateY(-50%);
-    font-size: 10em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
     text-align: left; /* Text linksbündig ausrichten */
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -65,10 +65,10 @@ h1 {
 }
 #keyword2 {
     position: absolute;
-    top: 35%;
+    top: 15%;
     right: 1%;
     transform: translateY(-50%);
-    font-size: 10em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
     text-align: right; /* Text linksbündig ausrichten */
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -76,97 +76,390 @@ h1 {
 }
 #sun_glowing_s2 {
     position: absolute;
-    top: 45%;
-    left: 5%;
+    top: 60%;
+    left: -8%;
     transform: translate(-50%, -50%);
     width: 80%; /* Passen Sie die Breite nach Bedarf an */
     z-index: -2;
 }
 #gate {
     position: absolute;
-    top: 45%;
-    left: 5%;
+    top: 35%;
+    left: -8%;
     transform: translate(-50%, -50%);
     width: 20%; /* Passen Sie die Breite nach Bedarf an */
 }
 #mountain {
     position: absolute;
-    top: 75%;
-    left: -0.5%;
+    top: 68%;
+    left: -5vw;
     transform: translate(-50%, -50%);
-    width: 205%; /* Passen Sie die Breite nach Bedarf an */
-    z-index: -1;
-}
-#mountain {
-    position: absolute;
-    top: 75%;
-    left: -0.5%;
-    transform: translate(-50%, -50%);
-    width: 205%; /* Passen Sie die Breite nach Bedarf an */
+    width: 99vw; /* Passen Sie die Breite nach Bedarf an */
     z-index: -1;
 }#keyword3 {
     position: absolute;
-    top: -5%;
+    top: -33%;
     left: 25%;
     font-size: 2.5em;
     transform: translate(-50%, -50%);
+    font-weight: bold;
     color: blue;
 }
 #keyword4 {
     position: absolute;
-    top: 25%;
-    left: 10%;
-    font-size: 5em;
+    top: -6%;
+    left: 8%;
+    font-size: 4.5em;
     transform: translate(-50%, -50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
+    font-weight: bold;
     color: blue;
 }
 #umbrella1{
     position: absolute;
-    top: 50%;
-    left: 8%;
+    top: 20%;
+    left: 6%;
     transform: translate(-50%, -50%);
-    width: 17%;
+    width: 18%;
 }
 #umbrella2{
     position: absolute;
-    top: 23%;
+    top: -8%;
     left: 25%;
     transform: translate(-50%, -50%);
-    width: 17%;
+    width: 18%;
 }
 #umbrella3{
     position: absolute;
-    top: 40%;
+    top: 12%;
     left: 40%;
     transform: translate(-50%, -50%);
-    width: 17%;
+    width: 18%;
 }
 #spark1{
     position: absolute;
-    top: 12%;
-    left: 70%;
+    top: -20%;
+    left: 55%;
     transform: translate(-50%, -50%);
     width: 35%;
 }
 #spark2{
     position: absolute;
-    top: -8%;
-    left: 50%;
+    top: -40%;
+    left: 55%;
     transform: translate(-50%, -50%);
     transform: rotate(180deg);
     width: 35%;
 }
 #stanza2{
     position: absolute;
-    top: 40%;
-    left: 77%;
+    top: 16%;
+    left: 76%;
     transform: translate(-50%, -50%);
     width: 35%;
     text-align: right;
     width: 40%;
 }
+#keyword5{
+    position: absolute;
+    top: -35%;
+    left: 32%;
+    font-size: 8.5em;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+#stanza3_1{
+    position: absolute;
+    top: -8%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#eye_open{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+}
+#yinyang{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+}
+#stanza3_2{
+    position: absolute;
+    top: -20%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#keyword6{
+    position: absolute;
+    top: 10%;
+    left: 82%;
+    font-size: 4.5em;
+    font-weight: bold;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+#keyword7{
+    position: absolute;
+    top: -44%;
+    left: 15%;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+#keyword8{
+    position: absolute;
+    top: -20%;
+    left: 7%;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#keyword9{
+    position: absolute;
+    top: -55%;
+    left: 23%;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#keyword10{
+    position: absolute;
+    top: -25%;
+    left: 23%;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#koifish3{
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 16vw;
+}
+#koifish2{
+    position: absolute;
+    top: -30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 13vw;
+}
+#koifish1{
+    position: absolute;
+    top: -15%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 13vw;
+}
+#stanza4{
+    position: absolute;
+    top: -60%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    text-align: right;
+    width: 40%;
+}
+#keyword11{
+    position: absolute;
+    top: -35%;
+    left: 85%;
+    font-size: 2.5em;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    color: blue;
+}
+#keyword12{
+    position: absolute;
+    top: -20%;
+    left: 88%;
+    font-size: 2.5em;
+    font-weight: normal;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#mountain_face{
+    position: absolute;
+    top: -25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 42vw;
+}
+#fighter{
+    position: absolute;
+    top: -61%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 8vw;
+}
+#sun_section6{
+    position: absolute;
+    top: -65%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 16vw;
+    z-index: -1;
+}
+#stanza5_1{
+    position: absolute;
+    top: -45%;
+    left: 65%;
+    text-align: right;
+    text-wrap: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    transform: translate(-50%, -50%);
+}
+#keyword13{
+    position: absolute;
+    top: -40%;
+    left: 77%;
+    font-size: 2.5em;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    opacity: 30%;
+    color: blue;
+}
+#keyword14{
+    position: absolute;
+    top: -50%;
+    left: 82%;
+    font-size: 2.5em;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    opacity: 30%;
+    color: blue;
+}
+#keyword15{
+    position: absolute;
+    top: -40%;
+    left: 95%;
+    font-size: 4.5em;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    opacity: 50%;
+    color: blue;
+}
+#keyword16{
+    position: absolute;
+    top: -40%;
+    left: 92%;
+    font-size: 4.5em;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    opacity: 80%;
+    color: blue;
+}
+#stanza6_1{
+    position: absolute;
+    top: -58%;
+    left: 12%;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+#keyword17 {
+    position: absolute;
+    top: -58%;
+    left: 20%;
+    transform: translateY(-50%);
+    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: center; /* Text linksbündig ausrichten */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#keyword18 {
+    position: absolute;
+    top: -58%;
+    left: 55%;
+    transform: translateY(-50%);
+    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: center; /* Text linksbündig ausrichten */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: blue;
+}
+#stanza6_2{
+    position: absolute;
+    top: -58%;
+    left: 88%;
+    text-wrap: nowrap;
+    transform: translate(-50%, -50%);
+    text-align: right; 
+}
+#earth_red{
+    position: absolute;
+    top: -58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+}
+#stanza7{
+    position: absolute;
+    top: -90%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left; /* Text linksbündig ausrichten */
+}
+#IKIGAI_sign{
+    position: absolute;
+    top: -65%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+}
+#keyword19 {
+    position: absolute;
+    top: -38%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 9em; /* Passen Sie die Schriftgröße nach Bedarf an */
+    text-align: right; /* Text linksbündig ausrichten */
+    color: blue;
+    z-index: -1;
+}
+
+
+
+
+
 
 
 
