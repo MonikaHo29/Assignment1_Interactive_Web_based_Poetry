@@ -109,10 +109,10 @@ h1.englisch {
     transform: translate(-50%, -50%);
     font-size: 6em;
     letter-spacing: 0.1em;
-    animation: fadeIn 3.5s ease-in-out forwards;
+    animation: fadeIn-title 3.5s ease-in-out forwards;
     opacity: 0; 
 }
-@keyframes fadeIn {
+@keyframes fadeIn-title {
     from {
         opacity: 0;
     }
@@ -122,25 +122,29 @@ h1.englisch {
 }
 #introduction_japanese {
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 35%;
-    animation: fadeOut 1.5s ease-out;
+    animation: fadeOut 2s ease-out;
     opacity: 0; 
 }
 #introduction_englisch {
     position: absolute;
-    top: 58%;
+    top: 55%;
     left: 35%;
     font-weight: 300;
-    animation: fadeIn 4.5s ease-in-out forwards; 
+    animation: fadeIn 5s ease-in-out forwards; 
     opacity: 0;
 }
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    50% {
         opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 60%;
     }
 }
 
@@ -414,7 +418,7 @@ h1.englisch {
 /*------------------------------------section 4-----------------------------------------*/    
 #keyword5{
     top: -35%;
-    left: 32%;
+    left: 25%;
     text-wrap: nowrap;
     writing-mode: horizontal-tb;
     text-orientation:unset;
@@ -422,7 +426,7 @@ h1.englisch {
 }
 #keyword5_translate {
     top: -35%;
-    left: 15%;
+    left: 10%;
     z-index: 1;
     font-size: 1.5em;
     letter-spacing: 0.2em;
@@ -440,14 +444,14 @@ h1.englisch {
     opacity: 30%;
 }
 #stanza3_1{
-    top: -8%;
-    left: 23%;
+    top: 2%;
+    left: 20%;
     text-align: center;
 }
 #stanza3_1_translate {
     position: absolute;
-    top: -8%;
-    left: 3%;
+    top: 2%;
+    left: -0.5%;
     text-align: center;
     width: 40%;
     transform: translateY(-50%);
@@ -469,7 +473,7 @@ h1.englisch {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25vw;
-    transition: opacity 0.5s ease-in-out; /* Übergangseffekt für das Ausblenden */
+    transition: opacity 0.5s ease-in-out; 
 }
 #yinyang{
     position: absolute;
@@ -499,7 +503,7 @@ h1.englisch {
     width: 25vw;
     z-index: 1;
     transition: 0.5s;
-    transition: opacity 0.5s ease-in-out; /* Übergangseffekt für das Ausblenden */
+    transition: opacity 0.5s ease-in-out; 
 }
 #eye_close:hover{
     opacity: 0;
@@ -510,22 +514,23 @@ h1.englisch {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25vw;
-    opacity: 0; /* Startet unsichtbar */
+    opacity: 0; 
     z-index: 1;
-    transition: opacity 0.5s ease-in-out; /* Übergangseffekt für das Einblenden */
+    transition: opacity 0.5s ease-in-out; 
 }
 #eye_close:hover + #lashes {
     opacity: 1;
 }
 #stanza3_2{
-    top: -20%;
-    left: 78%;
+    top: -50%;
+    left: 80%;
+    text-wrap: nowrap;
     text-align: center;
 }
 #stanza3_2_translate {
     position: absolute;
-    top: -20%;
-    left: 58%;
+    top: -50%;
+    left: 60%;
     text-align: center;
     width: 40%;
     transform: translateY(-50%);
@@ -567,6 +572,7 @@ h1.englisch {
 #keyword6:hover{
     opacity: 30%;
 }
+
 
 /*------------------------------------section 5-----------------------------------------*/    
 #keyword7{
@@ -647,7 +653,7 @@ h1.englisch {
     transition: 0.5s;
 }
 #keyword9:hover + #keyword9_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1;
 }
 #keyword9:hover{
     opacity: 30%;
@@ -671,11 +677,11 @@ h1.englisch {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: 0.2em;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #keyword10:hover + #keyword10_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword10:hover{
     opacity: 30%;
@@ -687,21 +693,6 @@ h1.englisch {
     transform: translate(-50%, -50%);
     width: 16vw;
     transition: 0.5s;   
-    animation-name: move-koifish3;   
-    animation-delay: 1s;
-    animation-duration: 5s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;  
-}
-@keyframes move-koifish3 {
-    0% {
-        top: -60%;
-        opacity: 1;
-    }
-    100% {
-        top: 10%;
-        opacity: 0;
-    }
 }
 #koifish2{
     position: absolute;
@@ -709,22 +700,7 @@ h1.englisch {
     left: 62%;
     transform: translate(-50%, -50%);
     width: 13vw;
-    transition: 0.5s;   
-    animation-name: move-koifish2;   
-    animation-delay: 1s;
-    animation-duration: 5s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;  
-}
-@keyframes move-koifish2 {
-    0% {
-        top: -40%;
-        opacity: 1;
-    }
-    100% {
-        top: 5%;
-        opacity: 0;
-    }
+    transition: 0.5s;    
 }
 #koifish1{
     position: absolute;
@@ -736,7 +712,7 @@ h1.englisch {
     animation-name: move-koifish1;   
     animation-delay: 1s;
     animation-duration: 5s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 1;
     animation-direction: alternate;   
 }
 @keyframes move-koifish1 {
@@ -747,16 +723,17 @@ h1.englisch {
     100% {
         top: 10%;
         opacity: 0;
+        width: 16vw;
     }
 }
-#stanza4{
+#stanza4_1{
     top: -70%;
     left: 76%;
     width: 35%;
     text-align: right;
     width: 40%;
 }
-#stanza4_translate {
+#stanza4_1_translate {
     position: absolute;
     top: -70%;
     left: 55%;
@@ -766,13 +743,13 @@ h1.englisch {
     text-wrap: nowrap;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
-#stanza4:hover + #stanza4_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+#stanza4_1:hover + #stanza4_1_translate{
+    opacity: 1; 
 }
-#stanza4:hover{
+#stanza4_1:hover{
     opacity:0;
 }
 #keyword11{
@@ -793,11 +770,11 @@ h1.englisch {
     text-orientation:unset;
     text-wrap: nowrap;
     letter-spacing: 0.2em;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #keyword11:hover + #keyword11_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword11:hover{
     opacity: 30%;
@@ -819,14 +796,40 @@ h1.englisch {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: 0.2em;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #keyword12:hover + #keyword12_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword12:hover{
     opacity: 30%;
+}
+#stanza4_2{
+    top: -1%;
+    left: 76%;
+    width: 35%;
+    text-align: right;
+    width: 40%;
+}
+#stanza4_2_translate {
+    position: absolute;
+    top: -1%;
+    left: 55%;
+    text-align: right;
+    width: 40%;
+    transform: translateY(-50%);
+    text-wrap: nowrap;
+    font-size: 0.8em;
+    color:#B61100;
+    opacity: 0; 
+    transition: 0.5s;
+}
+#stanza4_2:hover + #stanza4_2_translate{
+    opacity: 1; 
+}
+#stanza4_2:hover{
+    opacity:0;
 }
 
 
@@ -877,20 +880,20 @@ h1.englisch {
     text-wrap: nowrap;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0;
     transition: 0.5s;
 }
 #stanza5:hover + #stanza5_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #stanza5:hover{
     opacity:0;
 }
 #stanza5:hover ~ #keyword13 {
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
 }
 #stanza5:hover ~ #keyword14 {
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
 }
 #keyword13::selection{
     opacity: 0;
@@ -911,11 +914,11 @@ h1.englisch {
     color:black;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0;
     transition: 0.5s;
 }
 #keyword13:hover + #keyword13_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword13:hover{
     opacity: 30%;
@@ -937,11 +940,11 @@ h1.englisch {
     color:black;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0;
     transition: 0.5s;
 }
 #keyword14:hover + #keyword14_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword14:hover{
     opacity: 15%;
@@ -956,6 +959,7 @@ h1.englisch {
     left: 96%;
     opacity: 80%;
 }
+
 
 /*------------------------------------section 7-----------------------------------------*/    
 #stanza6_1{
@@ -974,11 +978,11 @@ h1.englisch {
     text-wrap: nowrap;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #stanza6_1:hover + #stanza6_1_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #stanza6_1:hover{
     opacity:0;
@@ -997,11 +1001,11 @@ h1.englisch {
     letter-spacing: 0.2em;
     color:black;
     letter-spacing: 0.2em;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #keyword17:hover + #keyword17_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword17:hover{
     opacity: 30%;
@@ -1020,11 +1024,11 @@ h1.englisch {
     letter-spacing: 0.2em;
     color:black;
     letter-spacing: 0.2em;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0;
     transition: 0.5s;
 }
 #keyword18:hover + #keyword18_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword18:hover{
     opacity: 30%;
@@ -1045,11 +1049,11 @@ h1.englisch {
     text-wrap: nowrap;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #stanza6_2:hover + #stanza6_2_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #stanza6_2:hover{
     opacity:0;
@@ -1063,7 +1067,7 @@ h1.englisch {
     opacity: 1;
 }
 #earth_black:hover{
-    opacity: 0; /* Macht das Element sichtbar */
+    opacity: 0; 
 }
 #earth_america{
     position: absolute;
@@ -1073,10 +1077,10 @@ h1.englisch {
     width: 20%;
     transition: 0.5s;
     z-index: 1;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
 }
 #earth_america:hover{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #earth_europe_asia{
     position: absolute;
@@ -1089,7 +1093,7 @@ h1.englisch {
     opacity: 0;
 }
 #earth_europe_asia:hover{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #earth_africa{
     position: absolute;
@@ -1102,7 +1106,7 @@ h1.englisch {
     opacity: 0;
 }
 #earth_africa:hover{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #earth_red{
     position: absolute;
@@ -1116,8 +1120,6 @@ h1.englisch {
 #earth_red{
     opacity: 1;
 }
-
-
 
 
 /*------------------------------------section 8-----------------------------------------*/    
@@ -1137,11 +1139,11 @@ h1.englisch {
     text-wrap: nowrap;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #stanza7:hover + #stanza7_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #stanza7:hover{
     opacity:0;
@@ -1200,11 +1202,11 @@ h1.englisch {
     text-wrap: nowrap;
     writing-mode: horizontal-tb;
     text-orientation:unset;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #keyword19:hover + #keyword19_translate {
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #keyword19:hover{
     opacity: 30%;
@@ -1228,20 +1230,12 @@ h1.englisch {
     font-weight: normal;
     font-size: 0.8em;
     color:#B61100;
-    opacity: 0; /* Macht das Element unsichtbar */
+    opacity: 0; 
     transition: 0.5s;
 }
 #motivation:hover + #motivation_translate{
-    opacity: 1; /* Macht das Element sichtbar */
+    opacity: 1; 
 }
 #motivation:hover{
     opacity:0;
 }
-
-
-
-
-
-
-
-
